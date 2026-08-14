@@ -53,6 +53,27 @@
             flex-wrap: wrap;
             margin-top: 1.5rem;
         }
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .gallery-item {
+            width: 45%;
+            min-width: 250px;
+            background: #eee;
+            border-radius: 6px;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
         ul {
             padding-left: 1.2rem;
         }
@@ -60,7 +81,6 @@
             margin-bottom: 0.5rem;
         }
     </style>
-    <!-- LINKEDIN PROFILE SCRIPT -->
     <script src="https://linkedin.com" async defer type="text/javascript"></script>
 </head>
 <body>
@@ -86,17 +106,34 @@
             </ul>
         </div>
 
+        <!-- NEW DYNAMIC GALLERY FOR GOOGLE IMAGES SEARCH -->
+        <div class="card">
+            <h2>Certificates & Highlights</h2>
+            <p>Visual highlights of my student leadership milestones:</p>
+            <div class="gallery">
+                
+                <div class="gallery-item">
+                    <!-- Image file 1 -->
+                    <img src="certificate.jpg" alt="Rithanya Thiruchandran Leadership Certificate">
+                    <p>Leadership Achievement</p>
+                </div>
+
+                <div class="gallery-item">
+                    <!-- Image file 2 -->
+                    <img src="summit.jpg" alt="Rithanya Thiruchandran Girl Up India Summit">
+                    <p>Extracurricular Initiative</p>
+                </div>
+
+            </div>
+        </div>
+
         <div class="card" style="text-align: center;">
             <h2>Connect With Me Officially</h2>
             <p>Scan or click my official LinkedIn profile verification badges below:</p>
-            
             <div class="badge-container">
-                <!-- LIGHT THEME BADGE -->
                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="rithanyathiruchandran" data-version="v1">
                     <a class="badge-base__link LI-simple-link" href="https://linkedin.com">Rithanya Thiruchandran</a>
                 </div>
-
-                <!-- DARK THEME BADGE -->
                 <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="rithanyathiruchandran" data-version="v1">
                     <a class="badge-base__link LI-simple-link" href="https://linkedin.com">Rithanya Thiruchandran</a>
                 </div>
